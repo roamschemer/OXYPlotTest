@@ -1,4 +1,5 @@
 ﻿using Foundation;
+using OxyPlot.Xamarin.Forms.Platform.iOS;
 using Prism;
 using Prism.Ioc;
 using UIKit;
@@ -22,6 +23,7 @@ namespace OXYPlotTest.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             global::Xamarin.Forms.Forms.Init();
+            PlotViewRenderer.Init();//OxyPlotに必須
             LoadApplication(new App(new iOSInitializer()));
 
             return base.FinishedLaunching(app, options);

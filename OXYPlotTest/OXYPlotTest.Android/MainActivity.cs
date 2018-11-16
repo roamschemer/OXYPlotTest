@@ -1,6 +1,7 @@
 ﻿using Android.App;
 using Android.Content.PM;
 using Android.OS;
+using OxyPlot.Xamarin.Forms.Platform.Android;
 using Prism;
 using Prism.Ioc;
 
@@ -17,6 +18,7 @@ namespace OXYPlotTest.Droid
             base.OnCreate(bundle);
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
+            PlotViewRenderer.Init();//OxyPlotに必須
             LoadApplication(new App(new AndroidInitializer()));
         }
     }

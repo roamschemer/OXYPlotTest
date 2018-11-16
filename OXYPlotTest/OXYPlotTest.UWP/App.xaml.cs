@@ -1,4 +1,5 @@
-﻿using System;
+﻿using OxyPlot.Xamarin.Forms.Platform.UWP;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -53,6 +54,7 @@ namespace OXYPlotTest.UWP
                 rootFrame.NavigationFailed += OnNavigationFailed;
 
                 Xamarin.Forms.Forms.Init(e);
+                PlotViewRenderer.Init();//OxyPlotに必須
 
                 if (e.PreviousExecutionState == ApplicationExecutionState.Terminated)
                 {
