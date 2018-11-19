@@ -1,9 +1,6 @@
 ﻿using Prism.Navigation;
-
 using Reactive.Bindings;
 using OxyPlot;
-using OxyPlot.Series;
-using OxyPlot.Axes;
 using OXYPlotTest.Models;
 using Reactive.Bindings.Extensions;
 using System;
